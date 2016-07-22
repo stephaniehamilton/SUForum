@@ -1,0 +1,124 @@
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+*{
+box-sizing: border-box;
+background-color: #303030;
+}
+
+.header {
+	text-align: center;
+}
+
+h1 {
+padding-top: 0;
+color: #0099ff;
+
+}
+
+h2 {
+color: #ff6666;
+font-weight: lighter;
+
+
+}
+
+h3 {
+	color: #0099ff;
+	padding-left: 30px;
+}
+.garnet {
+	display: block;
+	border-radius: 25px;
+	border-color: #0099ff;
+}
+.name {
+	background-color: #fff;
+	display: block;
+	vertical-align: left;
+	height: 25px;
+	border: 1px solid red;
+	border-radius: 25px;
+	margin-top: 25px;
+	margin-bottom: 7px;
+	margin-left: 30px;
+
+}
+
+.title {
+	background-color: #fff;
+	display: block;
+	vertical-align: center;
+	height: 25px;
+	border: 1px solid red;
+	border-radius: 25px;
+	margin-bottom: 7px;
+	margin-left: 30px;
+
+}
+
+.link {
+	background-color: #fff;
+	display: block;
+	vertical-align: center;
+	height: 25px;
+	border: 1px solid red;
+	border-radius: 25px;
+	margin-bottom: 7px;
+	margin-left: 30px;
+
+}
+
+.text {
+	background-color: #fff;
+	display: block;
+	vertical-align: center;
+	height: 200px;
+	border: 1px solid red;
+	border-radius: 25px;
+	margin-bottom: 7px;
+	margin-left: 30px;
+
+}
+.btn {
+	background-color: #0099ff; /* Green */
+	border: none;
+	border-radius: 25px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 165px;
+	margin-left: 30px;
+
+}
+.posts {
+	color: white;
+}
+
+======
+  Media Queries
+==================================== */
+@media (min-width: 320px) and (max-width: 568px) {
+  .garnet {
+    display:block;
+		position: fixed;
+
+  }
+}
+
+@media (min-width: 568px) {
+  .garnet {
+		display: block;
+		position: relative;
+		top: -360px;
+		left: 100px;
+		border-radius: 25px;
+		border-color: #0099ff;
+	}
+  }
+}

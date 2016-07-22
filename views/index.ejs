@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Steven Universe Universe</title>
+<link rel="stylesheet" type="text/css" href="../css/su.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+</head>
+
+<body>
+  <div class=wrapper">
+  <h1 class="header">Steven Universe Universe</h1>
+<ul class="posts">
+  <% for(var i=0; i<posts.length; i++) {%>
+    <li class="post">
+      <span><%= posts[i].name %></span>
+      <span><%= posts[i].title %></span>
+      <span><%= posts[i].link %></span>
+      <span><%= posts[i].text %></span>
+    </li>
+  <% } %>
+</ul>
+</div>
+<h2 class="header">
+Welcome to the universe of all things Steven.<br>
+This Week's Question: <br>
+What's your favorite Garnet moment?
+</h2>
+<h3 class="add"> Add a new post</h3>
+<form action="/posts" ng-submit="addPost()" method="POST" class="input">
+  <input type="text" placeholder="Author" name="name" class="name"></input>
+  <input type="text" placeholder="Title" name="title" class="title"></input>
+  <input type="text" placeholder="Link" name="link" class="link"></input>
+  <input type="text" placeholder="Post" name="text" class="text"></input>
+  <button type="submit" class="btn">Post</button>
+  <center>
+    <img src="../images/garnet.jpg" width="300" class="garnet"></center>
+</form>
+
+<script src='../public/app.js'></script>
+
+</body>
+</html>

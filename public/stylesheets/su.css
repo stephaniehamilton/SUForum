@@ -1,0 +1,67 @@
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+*{
+box-sizing: border-box;
+}
+.posts {
+	line-height: 1.6;
+	color: #cc0099;
+
+}
+
+h1 {
+margin-top: 0;
+color: #cc0099;
+background: #333;
+
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+.posts {
+  margin:0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* ---- Layout Containers ---- */
+
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+head {
+	background: #3acec2;
+  padding: 1em, 0;
+}
+
+/*.main-footer {
+	padding: 2em 0;
+	background: #d9e4ea;
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+/* =================================
+  Media Queries
+==================================== */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+@media (min-width: 769px){
+.container{
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+  }
+}
